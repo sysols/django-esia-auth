@@ -1,0 +1,5 @@
+include LICENSE
+include README.md
+graft esia_auth
+prune sample_project
+prune esia_connector
