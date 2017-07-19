@@ -28,4 +28,4 @@ class AbstractEsiaAuthBackend(ModelBackend):
         return api
 
     def find_user(self, api, **kwargs):
-        return None
+        raise NotImplementedError('find_user must be implement')

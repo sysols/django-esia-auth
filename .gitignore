@@ -103,3 +103,5 @@ ENV/
 
 # Local
 .idea
+sample_project/certs
+sample_project/sample_project/local*.py

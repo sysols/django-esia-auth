@@ -1,0 +1,7 @@
+{% extends "admin/login.html" %}
+{% load i18n %}
+
+
+{% block usertools %}
+    <a href="{% url 'esia_auth:link' %}">{% trans 'Login with ESIA' %}</a>
+{% endblock %}

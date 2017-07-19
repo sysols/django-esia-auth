@@ -1,0 +1,3 @@
+[submodule "esia-connector"]
+	path = esia-connector
+	url = https://github.com/sysols/esia-connector

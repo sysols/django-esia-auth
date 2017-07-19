@@ -1,0 +1,6 @@
+# For esia-connector
+six==1.10.0
+# jwt==0.5.2
+PyJWT==1.5.2
+cryptography==2.0
+requests==2.11.1

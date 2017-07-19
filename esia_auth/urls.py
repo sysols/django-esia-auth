@@ -15,5 +15,5 @@ else:
 
 urlpatterns = [
     url(r'login/$', login_view, name='login'),
-    url(r'oauth_link/$', esia_oauth_link_view, name='link'),
+    url(r'oauth-link/$', esia_oauth_link_view, name='link'),
 ]
