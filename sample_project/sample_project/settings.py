@@ -31,7 +31,7 @@ AUTH_USER_MODEL = 'app.CustomUser'
 
 
 AUTHENTICATION_BACKENDS = [
-    'app.gears.CustomEsiaAuthBackend',
+    'esia_auth.gears.EsiaAuthBackend',
     'django.contrib.auth.backends.ModelBackend',
 ]
 
