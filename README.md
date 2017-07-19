@@ -40,9 +40,9 @@ AUTHENTICATION_BACKENDS = [
 ESIA_SETTINGS = {
     'CLIENT_ID': '',
     'REDIRECT_URL': 'http://localhost:8000/esia-auth/login',
-    'CERTIFICATE': '/path/to/crt',
-    'PRIVATE_KEY': '/path/to/key',
-    'TOKEN_CHECK_KEY': '/path/to/pub_key',
+    'CERTIFICATE': '/path/to/crt',                              # Относительно ESIA_CERTS_DIR
+    'PRIVATE_KEY': '/path/to/key',                              # Относительно ESIA_CERTS_DIR
+    'TOKEN_CHECK_KEY': '/path/to/pub_key',                      # Относительно ESIA_CERTS_DIR
     'SERVICE_URL': 'https://esia.gosuslugi.ru',
     'SCOPE': 'openid http://esia.gosuslugi.ru/usr_inf',
 }
@@ -74,3 +74,12 @@ urlpatterns = [
 {% endblock %}
 
 ```
+
+##### Необязательные настройки проекта
+* **ESIA_CERTS_DIR** - название директории, где храняться сертификаты и ключи.\
+    По умолчанию **certs** в **корне** проекта;
+* **ESIA_REDIRECT_AFTER_LOGIN** - адрес редиректа после успешной аутентификации через ЕСИА.\
+    По умолчанию **"/"**.
+* **ESIA_LOGIN_VIEW** - обработчик для **ESIA_SETTINGS->REDIRECT_URL** (адрес редиректа из ЕСИА).\
+    Можете переопределить, например **'apps.user_info.views.login_view'**.\
+    По умолчанию берется обработчик из **esia_auth (esia_auth->views->esia_login_view)**;
