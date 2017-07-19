@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 
 setup(
-    name='django-russian-fields',
+    name='django-esia-auth',
     version=russian_fields.__version__,
     packages=['esia_auth'],
     install_requires=['django'],
