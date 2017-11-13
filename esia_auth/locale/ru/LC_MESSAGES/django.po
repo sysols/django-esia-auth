@@ -42,11 +42,11 @@ msgstr "Пароль"
 
 #: models/esia_user.py:40
 msgid "First name"
-msgstr ""
+msgstr "Имя"
 
 #: models/esia_user.py:44
 msgid "Last name"
-msgstr "Имя"
+msgstr "Фамилия"
 
 #: models/esia_user.py:48
 msgid "Email"
